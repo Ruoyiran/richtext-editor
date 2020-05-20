@@ -297,6 +297,11 @@ public class MainActivity extends BaseActivity implements EditorListener {
     }
 
     @Override
+    public void onImageClicked(String src, String alt) {
+        Toast.makeText(this, "alt="+alt+", src=" + src, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
     public void onPageLoaded() {
         mEditor.setEditorEnabled(true);
         mEditor.focus();

@@ -27,6 +27,8 @@ class TinnyMceCallback {
         void onContentFetched(String content);
 
         void onLinkClicked(String url, String title);
+
+        void onImageClicked(String src, String alt);
     }
 
     TinnyMceCallback(TinnyMceListener listener) {
@@ -61,6 +63,13 @@ class TinnyMceCallback {
     public void onLinkClicked(String url, String title) {
         if (mListener != null) {
             mListener.onLinkClicked(url, title);
+        }
+    }
+    
+    @JavascriptInterface
+    public void onImageClicked(String src, String alt) {
+        if (mListener != null) {
+            mListener.onImageClicked(src, alt);
         }
     }
 

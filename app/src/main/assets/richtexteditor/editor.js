@@ -352,8 +352,9 @@ RE.clickHandler = function (e) {
         nativeCallbackHandler.onLinkClicked(link, title);
     } else if (target.tagName === 'IMG') {
         var src = target.getAttribute('src');
+        var alt = target.getAttribute('alt');
         e.preventDefault();
-//        nativeCallbackHandler.onClickedImage(src);
+        nativeCallbackHandler.onImageClicked(src, alt);
     }
 }
 

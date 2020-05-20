@@ -223,6 +223,13 @@ public class RichTextEditor implements TinnyMceCallback.TinnyMceListener {
     }
 
     @Override
+    public void onImageClicked(String src, String alt) {
+        if (mEditorListener != null) {
+            mEditorListener.onImageClicked(src, alt);
+        }
+    }
+
+    @Override
     public void onFormatChanged(Map<EditorFormat, Object> format) {
         if (mEditorListener != null) {
             mEditorListener.onFormatChanged(format);

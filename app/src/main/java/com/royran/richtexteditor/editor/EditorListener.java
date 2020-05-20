@@ -10,5 +10,7 @@ public interface EditorListener {
     void onCursorChanged(Map<EditorFormat, Object> enabledFormats);
 
     void onLinkClicked(String url, String title);
+
+    void onImageClicked(String src, String alt);
 }
 
