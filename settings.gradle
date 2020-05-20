@@ -1,0 +1,3 @@
+rootProject.name='richtext-editor'
+include ':app'
+include ':ucrop'

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:id="@+id/toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.royran.richtexteditor.ui.widget.RTToolbarImageButton
+                android:id="@+id/btn_undo"
+                style="@style/FormatButton"
+                android:background="@drawable/selector_ic_toolbar_undo_dark" />
+
+            <com.royran.richtexteditor.ui.widget.RTToolbarImageButton
+                android:id="@+id/btn_redo"
+                style="@style/FormatButton"
+                android:background="@drawable/selector_ic_toolbar_redo_dark" />
+
+            <com.royran.richtexteditor.ui.widget.RTToolbarImageButton
+                android:id="@+id/btn_insert_image"
+                style="@style/FormatButton"
+                android:background="@drawable/selector_ic_toolbar_image_dark" />
+
+            <com.royran.richtexteditor.ui.widget.RTToolbarImageButton
+                android:id="@+id/btn_insert_link"
+                style="@style/FormatButton"
+                android:background="@drawable/selector_ic_toolbar_link_dark" />
+
+            <com.royran.richtexteditor.ui.widget.RTToolbarImageButton
+                android:id="@+id/btn_bold"
+                style="@style/FormatButton"
+                android:background="@drawable/selector_ic_toolbar_bold_dark" />
+
+            <com.royran.richtexteditor.ui.widget.RTToolbarImageButton
+                android:id="@+id/btn_italic"
+                style="@style/FormatButton"
+                android:background="@drawable/selector_ic_toolbar_italic_dark" />
+
+            <com.royran.richtexteditor.ui.widget.RTToolbarImageButton
+                android:id="@+id/btn_font_size"
+                style="@style/FormatButton"
+                android:background="@drawable/selector_ic_toolbar_fontsize_dark" />
+
+            <com.royran.richtexteditor.ui.widget.RTToolbarImageButton
+                android:id="@+id/btn_text_color"
+                style="@style/FormatButton"
+                android:background="@drawable/selector_ic_toolbar_font_dark" />
+
+            <com.royran.richtexteditor.ui.widget.RTToolbarImageButton
+                android:id="@+id/btn_text_bg_color"
+                style="@style/FormatButton"
+                android:background="@drawable/selector_ic_toolbar_bgcolor_dark" />
+
+            <com.royran.richtexteditor.ui.widget.RTToolbarImageButton
+                android:id="@+id/btn_underline"
+                style="@style/FormatButton"
+                android:background="@drawable/selector_ic_toolbar_underline_dark" />
+
+            <com.royran.richtexteditor.ui.widget.RTToolbarImageButton
+                android:id="@+id/btn_strikethrough"
+                style="@style/FormatButton"
+                android:background="@drawable/selector_ic_toolbar_strikethrough_dark" />
+
+            <com.royran.richtexteditor.ui.widget.RTToolbarImageButton
+                android:id="@+id/btn_superscript"
+                style="@style/FormatButton"
+                android:background="@drawable/selector_ic_toolbar_superscript_dark" />
+
+            <com.royran.richtexteditor.ui.widget.RTToolbarImageButton
+                android:id="@+id/btn_subscript"
+                style="@style/FormatButton"
+                android:background="@drawable/selector_ic_toolbar_subscript_dark" />
+
+            <com.royran.richtexteditor.ui.widget.RTToolbarImageButton
+                android:id="@+id/btn_insert_numbers"
+                style="@style/FormatButton"
+                android:background="@drawable/selector_ic_toolbar_number_dark" />
+
+            <com.royran.richtexteditor.ui.widget.RTToolbarImageButton
+                android:id="@+id/btn_insert_bullets"
+                style="@style/FormatButton"
+                android:background="@drawable/selector_ic_toolbar_bullet_dark" />
+
+            <ImageButton
+                android:id="@+id/btn_blockquote"
+                style="@style/FormatButton"
+                android:src="@drawable/baseline_format_quote_white_36dp" />
+
+            <com.royran.richtexteditor.ui.widget.RTToolbarImageButton
+                android:id="@+id/btn_indent"
+                style="@style/FormatButton"
+                android:background="@drawable/selector_ic_toolbar_inc_indent_dark" />
+
+            <com.royran.richtexteditor.ui.widget.RTToolbarImageButton
+                android:id="@+id/btn_outdent"
+                style="@style/FormatButton"
+                android:background="@drawable/selector_ic_toolbar_dec_indent_dark" />
+
+            <com.royran.richtexteditor.ui.widget.RTToolbarImageButton
+                android:id="@+id/btn_align_left"
+                style="@style/FormatButton"
+                android:background="@drawable/selector_ic_toolbar_align_left_dark" />
+
+            <com.royran.richtexteditor.ui.widget.RTToolbarImageButton
+                android:id="@+id/btn_align_center"
+                style="@style/FormatButton"
+                android:background="@drawable/selector_ic_toolbar_align_center_dark" />
+
+            <com.royran.richtexteditor.ui.widget.RTToolbarImageButton
+                android:id="@+id/btn_align_right"
+                style="@style/FormatButton"
+                android:background="@drawable/selector_ic_toolbar_align_right_dark" />
+
+            <com.royran.richtexteditor.ui.widget.RTToolbarImageButton
+                android:id="@+id/btn_remove_format"
+                style="@style/FormatButton"
+                android:background="@drawable/selector_ic_toolbar_clear_dark" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

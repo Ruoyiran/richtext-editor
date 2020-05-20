@@ -1,0 +1,9 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">richtext-editor</string>
+    <string name="rte_link_enter_url">URL (required)</string>
+    <string name="rte_link_enter_url_text">Link Text (optional)</string>
+    <string name="rte_create_a_link">Create a Link</string>
+    <string name="rte_remove_action">Remove</string>
+    <string name="rte_invalid_link"><xliff:g id="link">%s</xliff:g> is not a valid address</string>
+    <string name="pick_image">Select an image</string>
+</resources>
