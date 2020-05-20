@@ -108,7 +108,7 @@ img {
     min-height: 30px;
     max-width: 100%;
     max-height: 100%;
-    opacity:1;
+    opacity: 1;
 }
 
 video {
@@ -149,15 +149,22 @@ blockquote p:last-child {
 }
 
 #title {
-    font-family: 'Merriweather', serif;
-    /*line-height: 1;*/
-    width: 100%;
+    margin: 15px 15px 5px 15px;
     box-sizing: border-box;
-    padding: 12px 10px 5px 15px;
-    min-height: 42px;
     font-weight: bold;
     font-size: 18px;
+    overflow: hidden;
     outline: 0px solid transparent;
+    white-space: nowrap;
+}
+
+#title br {
+    display: none;
+}
+
+#title * {
+    display: inline;
+    white-space: nowrap;
 }
 
 div.field[placeholderText][contenteditable=true]:empty:before {
@@ -169,21 +176,6 @@ div.field[placeholderText][contenteditable=true]:empty:focus:before {
     opacity: 0.6;
 }
 
-.single-line {
-    white-space: nowrap;
-    width: 100%;
-    overflow: hidden;
-    outline: 0px solid transparent;
-}
-
-.single-line br {
-    display: none;
-}
-
-.single-line * {
-    display: inline;
-    white-space: nowrap;
-}
 
 [contenteditable][placeholder]:empty:before {
     content: attr(placeholder);

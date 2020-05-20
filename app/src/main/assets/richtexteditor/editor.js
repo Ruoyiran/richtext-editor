@@ -34,9 +34,9 @@ if (ms) {
     lang = ms[1].toLowerCase();
 }
 if (lang.indexOf('zh') >= 0) {
-    $('#title').attr('placeholderText', '请输入标题')
+    $('#title').attr('placeholder', '请输入标题')
 } else {
-    $('#title').attr('placeholderText', 'Input title here')
+    $('#title').attr('placeholder', 'Input title here')
 }
 
 // reference: https://www.tiny.cloud/docs/general-configuration-guide/filter-content/#built-informats
@@ -340,6 +340,7 @@ RE.selectionChangeHandler = function () {
     }
     var enabledFormats = RE.getAllEnabledFormats();
     nativeCallbackHandler.onCursorChanged(JSON.stringify(enabledFormats));
+
 }
 
 RE.clickHandler = function (e) {
