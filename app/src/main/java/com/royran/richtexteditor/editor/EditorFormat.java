@@ -53,7 +53,7 @@ public enum EditorFormat {
                 return BULLET_LIST;
             case "insertOrderedList":
                 return ORDERED_LIST;
-            case "ic_toolbark_blockquote":
+            case "blockquote":
                 return BLOCKQUOTE;
             case "header":
                 return HEADER;
