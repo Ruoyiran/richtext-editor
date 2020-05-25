@@ -1,3 +1,4 @@
 rootProject.name='richtext-editor'
 include ':app'
 include ':ucrop'
+include ':richtext-editor'

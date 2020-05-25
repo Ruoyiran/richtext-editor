@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:ellipsize="end"
+        android:hint="@string/rte_input_title_hint"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separate_line_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.royran.rteditor.widget.EditorWebView
+            android:id="@+id/web_editor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/editor_toolbar"
+            android:background="@null" />
+
+        <FrameLayout
+            android:id="@+id/editor_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/black"
+            android:visibility="gone">
+
+            <include layout="@layout/editor_toolbar" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

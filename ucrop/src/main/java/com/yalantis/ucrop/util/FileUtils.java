@@ -234,4 +234,14 @@ public class FileUtils {
         }
     }
 
+    public static boolean removeFile(String path) {
+        if (TextUtils.isEmpty(path)) {
+            return false;
+        }
+        File file = new File(path);
+        if (file.exists()) {
+            return file.delete();
+        }
+        return false;
+    }
 }

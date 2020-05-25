@@ -1,0 +1,10 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="rte_link_enter_url">URL (required)</string>
+    <string name="rte_link_enter_url_text">Link Text (optional)</string>
+    <string name="rte_create_a_link">Create a Link</string>
+    <string name="rte_remove_action">Remove</string>
+    <string name="rte_invalid_link"><xliff:g id="link">%s</xliff:g> is not a valid address</string>
+    <string name="rte_pick_image">Select an image</string>
+    <string name="rte_open_gallery_at_none_activty">Can\'t open image gallery, ensure the context in an activty</string>
+    <string name="rte_input_title_hint">Input title here</string>
+</resources>

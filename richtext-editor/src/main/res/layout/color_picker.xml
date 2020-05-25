@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:colorPickerView="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <com.royran.rteditor.widget.colorpicker.ColorPickerView
+        android:id="@+id/color_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:padding="10dp"
+        colorPickerView:colorViewCheckedType="checkMark"
+        colorPickerView:colorViewHeight="30dp"
+        colorPickerView:colorViewMarginLeft="2dp"
+        colorPickerView:colorViewMarginRight="2dp"
+        colorPickerView:colorViewWidth="30dp"
+        colorPickerView:colors="@array/colorPickerColors" />
+
+</LinearLayout>
